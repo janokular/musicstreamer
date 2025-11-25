@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="{{ url_for('static', filename='favicon.svg') }}"
+    />
+    <title>926</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div id="videoLogoDiv">
+      <video id="videoLogo" width="810" autoplay loop>
+        <source
+          src="{{ url_for('static', filename='assets/926.M4V') }}"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</html>
