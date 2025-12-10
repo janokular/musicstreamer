@@ -1,9 +1,27 @@
-body {
-  background-color: #000000;
+html {
+  font-family: "NB International Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
-#videoLogoDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.album {
+  text-decoration: none;
+}
+
+.title {
+  color: black;
+  font-size: 80px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.title:hover {
+  color: grey;
+}
+
+.date {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 100;
 }

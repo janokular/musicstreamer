@@ -15,13 +15,31 @@
     />
   </head>
   <body>
-    <div id="videoLogoDiv">
-      <video id="videoLogo" width="810" autoplay loop>
-        <source
-          src="{{ url_for('static', filename='assets/926.M4V') }}"
-          type="video/mp4"
-        />
-      </video>
+    <div id="albumList">
+      <a class="album" href="">
+        <div>
+          <p class="title">
+            Artist - Album
+            <sup class="date">1990</sup>
+          </p>
+        </div>
+      </a>
+      <a class="album" href="">
+        <div>
+          <p class="title">
+            Artist - Album
+            <sup class="date">1991</sup>
+          </p>
+        </div>
+      </a>
+      <a class="album" href="">
+        <div>
+          <p class="title">
+            Artist - Album
+            <sup class="date">1992</sup>
+          </p>
+        </div>
+      </a>
     </div>
   </body>
   <script src="{{ url_for('static', filename='main.js') }}"></script>
