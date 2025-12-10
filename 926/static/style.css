@@ -14,6 +14,8 @@ html {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
+  display: inline-block;
+  position: relative;
 }
 
 .title:hover {
@@ -24,4 +26,17 @@ html {
   font-family: monospace;
   font-size: 20px;
   font-weight: 100;
+}
+
+.cover {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 700px;
+}
+
+.title:hover .cover {
+  display: block;
 }
