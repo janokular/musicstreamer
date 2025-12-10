@@ -16,6 +16,7 @@ html {
   margin-bottom: 0px;
   display: inline-block;
   position: relative;
+  z-index: 1; 
 }
 
 .title:hover {
@@ -34,7 +35,8 @@ html {
   top: 50%;
   right: 10%;
   transform: translateY(-50%);
-  width: 700px;
+  width: 750px;
+  z-index: -1;
 }
 
 .title:hover .cover {
