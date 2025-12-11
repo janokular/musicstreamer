@@ -5,7 +5,7 @@ from flask import url_for
 
 def get_albums():
     albums = []
-    base = Path(current_app.static_folder) / "albums"
+    base = Path(current_app.static_folder) / 'albums'
     if not base.exists():
         return albums
     
@@ -28,16 +28,15 @@ def get_albums():
                     continue
                 title = title_dir.name
 
-                rel_path = f"albums/{artist}/{year_str}/{title}"
-                url = url_for("static", filename=rel_path)
+                rel_path = f'albums/{artist}/{year_str}/{title}'
+                url = url_for('static', filename=rel_path)
 
                 albums.append({
-                    "artist": artist.replace("_", " "),
-                    "year": year,
-                    "title": title.replace("_", " "),
-                    "url": url,
+                    'artist': artist.replace('_', ' '),
+                    'year': year,
+                    'title': title.replace('_', ' '),
+                    'url': url,
                 })
 
-    albums.sort(key=lambda x: (x["artist"].lower(), x["year"], x["title"].lower()))
+    albums.sort(key=lambda x: (x['artist'].lower(), x['year'], x['title'].lower()))
     return albums
-  
