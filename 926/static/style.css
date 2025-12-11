@@ -11,9 +11,8 @@ html {
   color: black;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-left: 1.25rem;
-  margin-top: 1.25rem;
-  margin-bottom: 0;
+  margin-left: 10%;
+  margin-bottom: 0%;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -25,17 +24,17 @@ html {
 
 .year {
   font-family: monospace;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 .cover {
   display: none;
   position: fixed;
+  width: 40rem;
   top: 50%;
   right: 10%;
   transform: translateY(-50%);
-  width: 40rem;
   z-index: -1;
   filter: drop-shadow(0.75rem 0.75rem 0.5rem grey);
 }
