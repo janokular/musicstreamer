@@ -16,23 +16,19 @@
   </head>
   <body>
     {% if albums and albums|length %}
-    <div id="albumList">
-      {% for item in albums %}
-      <a class="album" href="{{ item.url }}">
-        <div>
-          <p class="title">
-            {{ item.artist }} - {{ item.title }}
-            <sup class="year">{{ item.year }}</sup>
-            <img
-              class="cover"
-              src="{{ item.url }}/cover.jpg"
-              alt="Album cover"
-            />
-          </p>
-        </div>
+    {% for item in albums %}
+    <div class="album">
+      <a class="title" href="{{ item.url }}">
+        {{ item.artist }} - {{ item.title }}
+        <sup class="year">{{ item.year }}</sup>
+        <img
+          class="cover"
+          src="{{ item.url }}/cover.jpg"
+          alt="Album cover"
+        />
       </a>
-      {% endfor %}
     </div>
+    {% endfor %}
     {% else %}
     <p>No albums found!</p>
     {% endif %}
