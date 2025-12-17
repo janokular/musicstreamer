@@ -1,4 +1,4 @@
-## Streamer
+## MusicStreamer
 ### Start the application
 ```
 . ./.venv/bin/activate
