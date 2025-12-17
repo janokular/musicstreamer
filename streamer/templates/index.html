@@ -17,17 +17,15 @@
   <body>
     {% if albums and albums|length %}
     {% for item in albums %}
-    <div class="album">
-      <a class="title" href="{{ item.url }}">
-        {{ item.artist }} - {{ item.title }}
-        <sup class="year">{{ item.year }}</sup>
-        <img
-          class="cover"
-          src="{{ item.url }}/cover.jpg"
-          alt="Album cover"
-        />
-      </a>
-    </div>
+    <a class="album" href="{{ item.url }}">
+      {{ item.artist }} - {{ item.title }}
+      <sup class="year">{{ item.year }}</sup>
+      <img
+        class="cover"
+        src="{{ item.url }}/cover.jpg"
+        alt="Album cover"
+      />
+    </a>
     {% endfor %}
     {% else %}
     <p>No albums found!</p>
