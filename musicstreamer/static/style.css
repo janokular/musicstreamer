@@ -48,5 +48,5 @@ body {
   top: 50%;
   right: 10%;
   transform: translateY(-50%);
-  filter: drop-shadow(0.75rem 0.75rem 0.5rem grey);
+  filter: drop-shadow(0.5em 0.5em 0.5em grey);
 }
