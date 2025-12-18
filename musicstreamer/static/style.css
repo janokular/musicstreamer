@@ -12,9 +12,8 @@ body {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  gap: 1.5rem;
-  margin: 2.5% 10% 2.5% 10%;
-  width: 100%;
+  gap: 1vw;
+  margin: 5vw 10vw 5vw 10vw;
   overflow: auto;
   scrollbar-width: none;
 }
@@ -22,9 +21,9 @@ body {
 .album {
   text-decoration: none;
   color: black;
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 900;
-  word-spacing: -1rem;
+  word-spacing: -0.75vw;
   flex: 0 0 60%;
 }
 
@@ -37,14 +36,14 @@ body {
 }
 
 .year {
-  font-size: 1rem;
+  font-size: 0.75vw;
   font-weight: 100;
 }
 
 .cover {
   display: none;
   position: fixed;
-  width: 40rem;
+  width: 32vw;
   top: 50%;
   right: 10%;
   transform: translateY(-50%);
